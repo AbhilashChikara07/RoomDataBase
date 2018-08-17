@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.okutech.horizantalprogressbar.MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F1F2"
+        android:padding="10dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:textColor="#676a6b" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:max="60"
+            android:layout_below="@id/tv"
+            android:progressDrawable="@drawable/progressbar_states" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pb"
+            android:layout_marginTop="10dp"
+            android:text="Start Operation" />
+    </RelativeLayout>
+</LinearLayout>
